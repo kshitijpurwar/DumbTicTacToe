@@ -1,3 +1,11 @@
+*
+  text-align: center
+  font-weight: 400
+  box-sizing: border-box
+
+html
+  height: 100%
+
 body
   background-color: #eee
   transition: all 1.3s ease-in-out
@@ -6,12 +14,6 @@ body
   margin: 0
   padding: 0
   height: 100%
-html
-  height: 100%
-*
-  text-align: center
-  font-weight: 400
-  box-sizing: border-box
 
 p.developer
   position: absolute
@@ -27,7 +29,6 @@ p.developer
 
 // Tic Tac toe board
 
-
 $sqUnit: 8rem
 
 .board
@@ -36,8 +37,7 @@ $sqUnit: 8rem
   display: flex
   flex-wrap: wrap
   background-color: #ddd
-  // border: 1px solid #000
-  margin: 70px auto
+  margin: 5rem auto
 
 .square
   width: $sqUnit
@@ -48,10 +48,14 @@ $sqUnit: 8rem
   font-size: 3rem
   color: #000
   user-select: none
-  transition: all 0.5s ease-in-out
+  transition: all 0.2s ease-in-out
   &:hover
     background-color: #aaa
 
 @media (max-width: 560px)
   html
     font-size: 14px
+
+@media (max-width: 320px)
+  html
+    font-size: 10px

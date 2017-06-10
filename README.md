@@ -8,8 +8,10 @@ NPM scripts are basically an alternative to gulp or grunt, similar to aliases fo
 
 ### How it works
 
-- `state` stores the current state of board in JS
-- `checkWin` checks weather either player has won the game or not, returns `true` or `false`
+- `state` Stores the current state of board in an array in JS
+- `checkWin` Checks whether either player has won the game or not, returns `true` or `false`
+- `resetGame` Resets the state of the game, virtually and in the DOM
+- `BotTurn` It is the basic AI I am using, it is __Dumb__, it is just random
 
 ### What are we using
 - [live server](https://github.com/tapio/live-server)

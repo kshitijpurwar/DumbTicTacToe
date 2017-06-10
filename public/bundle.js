@@ -101,6 +101,7 @@ function BotTurn() {
   if (checkWin(state)) {
     alert("Game won by " + (currentPlayer == "X" ? "You" : "Dumbass Retard Robot, Shame on you !!!"));
     resetGame();
+    currentPlayer = human;
     return 0;
   }
 
