@@ -1,0 +1,30 @@
+{
+  "name": "ReactTutsplusPractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "watchify src/app.js -o public/bundle.js -t [ babelify --presets [es2015 react] ]",
+    "server": "cd public; live-server --port=2000 --entry-file=index.html",
+    "sass": "sass --watch --style compressed src/styles.sass:public/styles.css",
+    "pug2html": "pug --output-style compressed --watch -o public/ src/index.pug",
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "live-server": "^1.2.0",
+    "watchify": "^3.9.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.0.0",
+    "pug": "^2.0.0-rc.2"
+  }
+}

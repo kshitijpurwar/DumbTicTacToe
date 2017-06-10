@@ -1,0 +1,32 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title React Tutsplus Tutorial
+		link(rel="stylesheet" href="./styles.css")
+	body
+		.root
+			h1 Easiest Tic Tac Toe of your Life
+			h2 Please don't lose this game
+		.board
+			.square(data-index="0")
+			.square(data-index="1")
+			.square(data-index="2")
+			.square(data-index="3")
+			.square(data-index="4")
+			.square(data-index="5")
+			.square(data-index="6")
+			.square(data-index="7")
+			.square(data-index="8")
+
+		p You always get the first chance and are represented with <b>X</b>
+		p This is a dumb Tic Tac Toe. if you lose, you are indeed a retard.
+		p: b I know that this game is full of bugs so please don't bother complaining or pointing them out.	
+		p.developer
+			| Made by 
+			a(href="https://kshitijpurwar.com/",target="blank") Kshitij Purwar
+
+		//- script(src="https://unpkg.com/react@15/dist/react.js")
+		//- script(src="https://unpkg.com/react-dom@15/dist/react-dom.js")
+		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.js")
+		script(src="./bundle.js" charset="utf-8")
